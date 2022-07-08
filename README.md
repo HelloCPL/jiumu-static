@@ -36,6 +36,13 @@
   + 然后将静态资源地址代理至该服务地址`https://www.jiumublog.cn/jiumu-static-prod/`即可
 
 
-### 项目使用
+### 项目使用静态资源
 
-- 静态资源
+- pc 项目使用
+```
+// .vue 文件
+<img :src="$STATIC_URL + 'pc/tags.png'" alt=""> 
+
+// .scss 文件
+background: url('#{$STATIC_URL}/pc/tags.png');
+```
